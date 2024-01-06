@@ -55,7 +55,7 @@ const Staff = () => (
       </div>
       <Image
         src="/mary_bio.jpg"
-        alt="A photo of Eric Lindgren"
+        alt="A photo of Mary Salyards"
         width={400}
         height={400}
         className="rounded-2xl object-contain"
