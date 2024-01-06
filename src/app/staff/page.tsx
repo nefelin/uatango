@@ -9,7 +9,7 @@ const Staff = () => (
         alt="A photo of Eric Lindgren"
         width={400}
         height={400}
-        className="rounded-2xl object-contain"
+        className="rounded-2xl object-contain h-[400px]"
       />
       <div className="gap-8 flex flex-col">
         <p>
@@ -20,8 +20,8 @@ const Staff = () => (
         <p>
           In the years since, he has continued to explore the many unique
           avenues of style, technique, and self-expression that Argentine Tango
-          offers. Eric has taught, toured, dj-ed, and performed throughout the US and
-          Europe and Argentina.
+          offers. Eric has taught, toured, dj-ed, and performed throughout the
+          US and Europe and Argentina.
         </p>
         <p>
           Eric is exceptional both for his endless willingness to refine and
@@ -41,12 +41,11 @@ const Staff = () => (
           Zumba extensively.
         </p>
         <p>
-          Mary first encountered Tango early in 2022 and quickly found it was a dance
-          she could not live without. Tango is full of compassion and
-          conversation. The musicality and improvisation of Tango allow
-          each dance to feel new and exciting. But her favorite part is
-          experiencing each sweet embrace and connection from different dance
-          partners.
+          Mary first encountered Tango early in 2022 and quickly found it was a
+          dance she could not live without. Tango is full of compassion and
+          conversation. The musicality and improvisation of Tango allow each
+          dance to feel new and exciting. But her favorite part is experiencing
+          each sweet embrace and connection from different dance partners.
         </p>
         <p>
           Mary delights in teaching this beautiful dance and helping to expand
@@ -55,10 +54,10 @@ const Staff = () => (
       </div>
       <Image
         src="/mary_bio_small.jpg"
-        alt="A photo of Mary Salyards"
         width={400}
         height={400}
-        className="rounded-2xl object-contain"
+        alt="A photo of Mary Salyards"
+        className="rounded-2xl object-contain h-[400px]"
       />
     </div>
   </div>
