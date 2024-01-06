@@ -5,7 +5,7 @@ const Staff = () => (
     <h3 className="mb-12 text-3xl flex justify-center">Eric Lindgren</h3>
     <div className="flex flex-col items-center lg:flex-row lg:items-start gap-12 mb-28">
       <Image
-        src="/ericbio_rest_bg.jpg"
+        src="/eric_bio_small.jpg"
         alt="A photo of Eric Lindgren"
         width={400}
         height={400}
@@ -37,24 +37,24 @@ const Staff = () => (
       <div className="gap-8 flex flex-col">
         <p>
           Mary has been dancing her entire life. Her childhood was sprinkled
-          with ballet, tap, and hip hop classes and she has study and taught
+          with ballet, tap, and hip hop classes and she has studied and taught
           Zumba extensively.
         </p>
         <p>
-          Mary first encountered early in 2022 and quickly found it was a dance
+          Mary first encountered Tango early in 2022 and quickly found it was a dance
           she could not live without. Tango is full of compassion and
-          conversation. The musicality and improvisation of tango dancing allow
+          conversation. The musicality and improvisation of Tango allow
           each dance to feel new and exciting. But her favorite part is
           experiencing each sweet embrace and connection from different dance
           partners.
         </p>
         <p>
           Mary delights in teaching this beautiful dance and helping to expand
-          the Tucson tango community!
+          the Tucson Tango community!
         </p>
       </div>
       <Image
-        src="/mary_bio.jpg"
+        src="/mary_bio_small.jpg"
         alt="A photo of Mary Salyards"
         width={400}
         height={400}
