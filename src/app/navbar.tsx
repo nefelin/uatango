@@ -92,7 +92,7 @@ const Navbar: React.FC = () => {
 
   return (
     <>
-      <nav className="text-blue-950 dark:text-purple-400 p-4 px-8 flex flex-row justify-between items-center w-full">
+      <nav className="text-blue-950 dark:text-purple-100 p-4 px-8 flex flex-row justify-between items-center w-full bg-blue-50 dark:bg-blue-900">
         <span className="lg:inline hidden font-bold">
           Argentine Tango at University of Arizona
         </span>
@@ -121,16 +121,16 @@ const Navbar: React.FC = () => {
         </button>
       </nav>
 
-      {isOpen && (
+      {(
         <div
           className={classes(
-            "absolute dark:bg-black top-0 right-0 h-full w-1/2 bg-white shadow-2xl text-lg flex flex-col items-end text-right gap-4 py-4 px-8 space-y-4 lg:opacity-0 lg:pointer-events-none transition-opacity",
+            "absolute dark:bg-black top-0 z-20 right-0 h-full w-2/5 bg-white shadow-2xl text-lg flex flex-col items-end text-right gap-4 py-4 px-4 space-y-4 lg:opacity-0 lg:pointer-events-none transition-opacity",
             isOpen
               ? "pointer-events-auto opacity-100"
               : "pointer-events-none opacity-0",
           )}
         >
-          <div className="w-full flex justify-end">{closeButton}</div>
+          <div className="w-full flex justify-end pr-2">{closeButton}</div>
           <ul onClick={() => setIsOpen(false)}>
             <NavLinks />
           </ul>

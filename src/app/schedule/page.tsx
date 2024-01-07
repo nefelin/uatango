@@ -20,10 +20,10 @@ const Calendar = () => (
           faculty at this time.
         </i>
       </p>
-      <div className="dark:bg-amber-50 bg-blue-100 shadow-2xl rounded-lg py-6 p-8 dark:text-black"><ul>
+      <div className="bg-blue-100 shadow-2xl rounded-lg py-6 p-8 dark:text-black"><ul>
         <li>Single class: $10</li>
         <li>
-          6-week series:
+          6-week series
           <ul className="ml-8">
             <li>Students: $30</li>
             <li>Faculty: $45</li>
@@ -34,7 +34,7 @@ const Calendar = () => (
     <div className="relative"><iframe
       className="rounded-sm h-[300px] lg:h-[500px] lg:w-full z-10 relative"
       src="https://calendar.google.com/calendar/embed?height=300&wkst=1&bgcolor=%23ffffff&ctz=America%2FPhoenix&showTitle=0&showTabs=0&showTz=1&showCalendars=0&showPrint=0&showNav=0&mode=AGENDA&src=NjhmMzI5OTY3N2FhZmJiZGI2YTIyODY0MWViMThlZDc2ZmNlZWUzNjQ4NDg1ZThhNzczNzE5ODExN2ViZWM4ZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23F09300"
-    ></iframe><div className="absolute top-0 z-0 text-sm text-gray-700 italic">Calendar is loading...</div></div>
+    ></iframe><div className="absolute top-0 z-0 text-sm text-gray-700 italic dark:text-purple-100">Calendar is loading...</div></div>
   </div>
 );
 

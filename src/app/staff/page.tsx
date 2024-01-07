@@ -2,7 +2,9 @@ import Image from "next/image";
 
 const Staff = () => (
   <div>
-    <h3 className="lg:mb-12 mb-8 text-3xl flex justify-center">Eric Lindgren</h3>
+    <h3 className="lg:mb-12 mb-8 text-3xl flex justify-center">
+      Eric Lindgren
+    </h3>
     <div className="flex flex-col items-center lg:flex-row lg:items-start gap-12 lg:mb-28 mb-20">
       <Image
         src="/eric_bio_small.jpg"
@@ -27,12 +29,14 @@ const Staff = () => (
           Eric is exceptional both for his endless willingness to refine and
           reinvent his dance as well for as for the unusual breadth of his
           knowledge and experience. In classes, Eric focuses on pursuing ease,
-          presence, expression, and pleasure, as the quickest most rewarding
-          paths to more deeply understand the dance.
+          presence, expression, and pleasure, as the most rewarding and direct ways
+          to explore the dance.
         </p>
       </div>
     </div>
-    <h3 className="lg:mb-12 mb-8 text-3xl w-full flex justify-center">Mary Salyards</h3>
+    <h3 className="lg:mb-12 mb-8 text-3xl w-full flex justify-center">
+      Mary Salyards
+    </h3>
     <div className="flex flex-col-reverse items-center lg:flex-row lg:items-start gap-12 lg:mb-28">
       <div className="gap-8 flex flex-col">
         <p>
