@@ -1,13 +1,26 @@
 const Calendar = () => (
   <div className="flex items-center lg:items-start flex-col lg:flex-row gap-20">
-    <div className="flex flex-col gap-4">
-      <p>New series begin every six weeks, but drop-ins are always welcome!</p>
+    <div className="flex flex-col gap-4 lg:w-1/2">
+      <h3 className="text-lg">Drop-ins are always welcome!</h3>
       <p>
-        Each series we will have some continuity of themes but are always
-        prepared to welcome new folks and get them up to speed.
+        All classes with take place in the Ina Gittings Building, Room #4.
+        <br />
+        <i className="text-xs">
+          Ina Gittings Building, 1737 E University Blvd{" "}
+          <a
+            className="text-blue-600 text-sm"
+            href="https://maps.app.goo.gl/CYfYWYZ3rfwJBhB5A"
+          >
+            (map)
+          </a>
+        </i>
+        <br/>
+        <i className="text-xs font-bold underline">
+          Note: Classes are open only to University of Arizona students and
+          faculty at this time.
+        </i>
       </p>
-      <p>Prices:</p>
-      <ul>
+      <div className="dark:bg-amber-50 bg-blue-100 shadow-2xl rounded-lg py-6 p-8 dark:text-black"><ul>
         <li>Single class: $10</li>
         <li>
           6-week series:
@@ -16,17 +29,12 @@ const Calendar = () => (
             <li>Faculty: $45</li>
           </ul>
         </li>
-      </ul>
-      <i>
-        note: Classes are open only to University of Arizona students and
-        faculty at this time.
-      </i>
+      </ul></div>
     </div>
-    <iframe
+    <div className="relative"><iframe
+      className="rounded-sm h-[300px] lg:h-[500px] lg:w-full z-10 relative"
       src="https://calendar.google.com/calendar/embed?height=300&wkst=1&bgcolor=%23ffffff&ctz=America%2FPhoenix&showTitle=0&showTabs=0&showTz=1&showCalendars=0&showPrint=0&showNav=0&mode=AGENDA&src=NjhmMzI5OTY3N2FhZmJiZGI2YTIyODY0MWViMThlZDc2ZmNlZWUzNjQ4NDg1ZThhNzczNzE5ODExN2ViZWM4ZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23F09300"
-      width="500"
-      height="300"
-    ></iframe>
+    ></iframe><div className="absolute top-0 z-0 text-sm text-gray-700 italic">Calendar is loading...</div></div>
   </div>
 );
 

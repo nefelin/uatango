@@ -2,14 +2,14 @@ import Image from "next/image";
 
 const Staff = () => (
   <div>
-    <h3 className="mb-12 text-3xl flex justify-center">Eric Lindgren</h3>
-    <div className="flex flex-col items-center lg:flex-row lg:items-start gap-12 mb-28">
+    <h3 className="lg:mb-12 mb-8 text-3xl flex justify-center">Eric Lindgren</h3>
+    <div className="flex flex-col items-center lg:flex-row lg:items-start gap-12 lg:mb-28 mb-20">
       <Image
         src="/eric_bio_small.jpg"
         alt="A photo of Eric Lindgren"
         width={400}
         height={400}
-        className="rounded-2xl object-contain h-[400px]"
+        className="rounded-2xl object-contain lg:h-[400px]"
       />
       <div className="gap-8 flex flex-col">
         <p>
@@ -32,8 +32,8 @@ const Staff = () => (
         </p>
       </div>
     </div>
-    <h3 className="mb-12 text-3xl w-full flex justify-center">Mary Salyards</h3>
-    <div className="flex flex-col-reverse items-center lg:flex-row lg:items-start gap-12 mb-28">
+    <h3 className="lg:mb-12 mb-8 text-3xl w-full flex justify-center">Mary Salyards</h3>
+    <div className="flex flex-col-reverse items-center lg:flex-row lg:items-start gap-12 lg:mb-28">
       <div className="gap-8 flex flex-col">
         <p>
           Mary has been dancing her entire life. Her childhood was sprinkled
@@ -57,7 +57,7 @@ const Staff = () => (
         width={400}
         height={400}
         alt="A photo of Mary Salyards"
-        className="rounded-2xl object-contain h-[400px]"
+        className="rounded-2xl object-contain lg:h-[400px]"
       />
     </div>
   </div>

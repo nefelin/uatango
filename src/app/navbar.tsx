@@ -2,16 +2,21 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import classes from "@/classes";
+import { usePathname } from "next/navigation";
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const path = usePathname();
 
   const NavLinks = () => (
     <>
       <li>
         <Link
           href="/"
-          className="px-3 py-2 rounded-md text-sm font-medium hover:text-blue-800"
+          className={classes(
+            "px-3 py-2 rounded-md text-sm hover:text-blue-800",
+            path === "/" ? "font-bold" : "font-medium",
+          )}
         >
           Home
         </Link>
@@ -19,7 +24,10 @@ const Navbar: React.FC = () => {
       <li>
         <Link
           href="/schedule"
-          className="px-3 py-2 rounded-md text-sm font-medium hover:text-blue-800"
+          className={classes(
+            "px-3 py-2 rounded-md text-sm hover:text-blue-800",
+            path === "/schedule" ? "font-bold" : "font-medium",
+          )}
         >
           Schedule
         </Link>
@@ -27,25 +35,28 @@ const Navbar: React.FC = () => {
       <li>
         <Link
           href="/staff"
-          className="px-3 py-2 rounded-md text-sm font-medium hover:text-blue-800"
+          className={classes(
+            "px-3 py-2 rounded-md text-sm hover:text-blue-800",
+            path === "/staff" ? "font-bold" : "font-medium",
+          )}
         >
           Who Are We
         </Link>
       </li>
-      <li>
-        <Link
-          href="/faq"
-          className="px-3 py-2 rounded-md text-sm font-medium hover:text-blue-800"
-        >
-          FAQ
-        </Link>
-      </li>
-      <li>
+      {/*<li>*/}
+      {/*  <Link*/}
+      {/*    href="/faq"*/}
+      {/*    className="px-3 py-2 rounded-md text-sm font-medium hover:text-blue-800"*/}
+      {/*  >*/}
+      {/*    FAQ*/}
+      {/*  </Link>*/}
+      {/*</li>*/}
+      <li className="lg:mt-0 mt-8">
         <Link
           href="/learn-tango"
-          className="px-3 py-2 rounded-md text-sm font-medium hover:bg-amber-400 bg-amber-500"
+          className="px-3 py-2 text-white rounded-md text-sm font-medium hover:bg-amber-400 bg-amber-500"
         >
-          Learn Tango
+          Take a Class
         </Link>
       </li>
     </>
@@ -58,18 +69,19 @@ const Navbar: React.FC = () => {
         height="24"
         viewBox="0 0 24 24"
         fill="none"
+        className="dark:text-white"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
           d="M18 6L6 18"
-          stroke="black"
+          stroke="currentColor"
           stroke-width="2"
           stroke-linecap="round"
           stroke-linejoin="round"
         />
         <path
           d="M6 6L18 18"
-          stroke="black"
+          stroke="currentColor"
           stroke-width="2"
           stroke-linecap="round"
           stroke-linejoin="round"
@@ -80,11 +92,11 @@ const Navbar: React.FC = () => {
 
   return (
     <>
-      <nav className="text-blue-950 p-4 flex flex-row justify-between items-center w-full">
-        <span className="lg:inline hidden">
+      <nav className="text-blue-950 dark:text-purple-400 p-4 px-8 flex flex-row justify-between items-center w-full">
+        <span className="lg:inline hidden font-bold">
           Argentine Tango at University of Arizona
         </span>
-        <span className="lg:hidden inline">U of A Tango</span>
+        <span className="lg:hidden inline font-bold">U of A Tango</span>
 
         <div className="hidden lg:flex space-x-4">
           <ul className="flex space-x-4 justify-center">
@@ -112,14 +124,14 @@ const Navbar: React.FC = () => {
       {isOpen && (
         <div
           className={classes(
-            "absolute top-0 left-0 h-full w-full bg-white flex flex-col items-center justify-center space-y-4 lg:opacity-0 lg:pointer-events-none transition-opacity",
+            "absolute dark:bg-black top-0 right-0 h-full w-1/2 bg-white shadow-2xl text-lg flex flex-col items-end text-right gap-4 py-4 px-8 space-y-4 lg:opacity-0 lg:pointer-events-none transition-opacity",
             isOpen
               ? "pointer-events-auto opacity-100"
               : "pointer-events-none opacity-0",
           )}
         >
-          {closeButton}
-          <ul>
+          <div className="w-full flex justify-end">{closeButton}</div>
+          <ul onClick={() => setIsOpen(false)}>
             <NavLinks />
           </ul>
         </div>
