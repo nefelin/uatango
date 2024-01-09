@@ -14,7 +14,7 @@ const Navbar: React.FC = () => {
         <Link
           href="/"
           className={classes(
-            "px-3 py-2 rounded-md text-sm hover:text-blue-800",
+            "px-3 py-2 rounded-md text-sm",
             path === "/" ? "font-bold" : "font-medium",
           )}
         >
@@ -25,7 +25,7 @@ const Navbar: React.FC = () => {
         <Link
           href="/schedule"
           className={classes(
-            "px-3 py-2 rounded-md text-sm hover:text-blue-800",
+            "px-3 py-2 rounded-md text-sm",
             path === "/schedule" ? "font-bold" : "font-medium",
           )}
         >
@@ -36,7 +36,7 @@ const Navbar: React.FC = () => {
         <Link
           href="/staff"
           className={classes(
-            "px-3 py-2 rounded-md text-sm hover:text-blue-800",
+            "px-3 py-2 rounded-md text-sm",
             path === "/staff" ? "font-bold" : "font-medium",
           )}
         >
@@ -46,7 +46,7 @@ const Navbar: React.FC = () => {
       {/*<li>*/}
       {/*  <Link*/}
       {/*    href="/faq"*/}
-      {/*    className="px-3 py-2 rounded-md text-sm font-medium hover:text-blue-800"*/}
+      {/*    className="px-3 py-2 rounded-md text-sm font-medium"*/}
       {/*  >*/}
       {/*    FAQ*/}
       {/*  </Link>*/}
