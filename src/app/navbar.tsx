@@ -52,12 +52,12 @@ const Navbar: React.FC = () => {
       {/*  </Link>*/}
       {/*</li>*/}
       <li className="lg:mt-0 mt-8">
-        <Link
-          href="/learn-tango"
+        <a
+          href="https://forms.gle/ep4iVtK6KXevkhdn8"
           className="px-3 py-2 text-white rounded-md text-sm font-medium hover:bg-amber-400 bg-amber-500"
         >
           Take a Class
-        </Link>
+        </a>
       </li>
     </>
   );
@@ -121,7 +121,7 @@ const Navbar: React.FC = () => {
         </button>
       </nav>
 
-      {(
+      {
         <div
           className={classes(
             "absolute dark:bg-black top-0 z-20 right-0 h-full w-2/5 bg-white shadow-2xl text-lg flex flex-col items-end text-right gap-4 py-4 px-4 space-y-4 lg:opacity-0 lg:pointer-events-none transition-opacity",
@@ -135,7 +135,7 @@ const Navbar: React.FC = () => {
             <NavLinks />
           </ul>
         </div>
-      )}
+      }
     </>
   );
 };
