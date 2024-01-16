@@ -29,15 +29,15 @@ const Staff = () => (
           Eric is exceptional both for his endless willingness to refine and
           reinvent his dance as well for as for the unusual breadth of his
           knowledge and experience. In classes, Eric focuses on pursuing ease,
-          presence, expression, and pleasure, as the most rewarding and direct ways
-          to explore the dance.
+          presence, expression, and pleasure, as the most rewarding and direct
+          ways to explore the dance.
         </p>
       </div>
     </div>
     <h3 className="lg:mb-12 mb-8 text-3xl w-full flex justify-center">
       Mary Salyards
     </h3>
-    <div className="flex flex-col-reverse items-center lg:flex-row lg:items-start gap-12 lg:mb-28">
+    <div className="flex flex-col-reverse items-center lg:flex-row lg:items-start gap-12 lg:mb-28 mb-20">
       <div className="gap-8 flex flex-col">
         <p>
           Mary has been dancing her entire life. Her childhood was sprinkled
@@ -63,6 +63,33 @@ const Staff = () => (
         alt="A photo of Mary Salyards"
         className="rounded-2xl object-contain lg:h-[400px]"
       />
+    </div>
+    <h3 className="lg:mb-12 mb-8 text-3xl w-full flex justify-center">
+      Ali Cox
+    </h3>
+    <div className="flex flex-col items-center lg:flex-row lg:items-start gap-12 lg:mb-28">
+      <Image
+        src="/ali_bio_small.jpg"
+        width={400}
+        height={400}
+        alt="A photo of Ali Cox"
+        className="rounded-2xl object-contain lg:h-[400px]"
+      />
+      <div className="gap-8 flex flex-col">
+        <p>
+          Ali started dancing in Turkey, after winning a pair of shoes in a
+          random raffle at a Milonga his parents dragged him to.
+        </p>
+        <p>
+          While his parents have been dancing for over fifteen years, Ali had
+          somehow managed to avoid trying Tango until 2021.
+        </p>
+        <p>
+          After relocating to Tucson to pursue a PHD in Physics, Ali began
+          taking Tango classes, became quickly infatuated, and now dances every
+          chance he gets.
+        </p>
+      </div>
     </div>
   </div>
 );
