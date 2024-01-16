@@ -52,8 +52,8 @@ const Staff = () => (
           each sweet embrace and connection from different dance partners.
         </p>
         <p>
-          Mary delights in teaching this beautiful dance and helping to expand
-          the Tucson Tango community!
+          Mary delights in teaching this beautiful dance and working to build
+          and expand the Tucson Tango community!
         </p>
       </div>
       <Image
