@@ -4,9 +4,9 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
-      <div className="flex flex-col items-center gap-4 mb-20">
+      <div className="flex flex-col items-center gap-4 lg:mb-20 mb-8">
         <h1 className="text-4xl">
-          Welcome to the home of Argentine Tango at the University of Arizona!
+          Welcome to Argentine Tango at the University of Arizona!
         </h1>
         <span className="text-xl">
           Now hosting weekly classes! Check our{" "}
@@ -16,9 +16,9 @@ export default function Home() {
           page for details
         </span>
       </div>
-      <div className="w-[90%]">
-        <div className="flex justify-between">
-          <div className="flex gap-8 flex-col w-1/2">
+      <div className="lg:w-[90%]">
+        <div className="flex lg:flex-row flex-col-reverse justify-between">
+          <div className="flex gap-8 flex-col lg:w-1/2">
             <h2 className="text-2xl">What is Tango?</h2>
             <p>
               Argentine Tango is a captivating dance that emerged from the
@@ -46,13 +46,13 @@ export default function Home() {
               your partner.
             </p>
           </div>
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center mb-12 lg:mb-0">
             <Image
               src="/eric_rebecca_gancho.jpeg"
               width={300}
               height={400}
               alt="A photo of Eric Lindgren and Rebecca Rorick Smith dancing Tango"
-              className="rounded-2xl "
+              className="rounded-2xl"
             />
             <span className="text-xs mt-2 text-gray-200">
               Eric Lindgren and Rebecca Rorick Smith
@@ -60,7 +60,7 @@ export default function Home() {
           </div>
         </div>
         <div className="mt-20">
-          <div className="flex gap-8 flex-col w-1/2">
+          <div className="flex gap-8 flex-col lg:w-1/2">
             <h2 className="text-2xl">What does tango look like?</h2>
             <p>
               Often confused with its cousin, Ballroom Tango, Argentine Tango
@@ -80,43 +80,55 @@ export default function Home() {
               with many more excellent performances.
             </p>
           </div>
-          <div className="grid-cols-2 gap-8 grid mt-10">
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/AL9scCF6F1E?si=hQugYWjUUJyzT-pV"
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-            ></iframe>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/rcT_6CsHiNk?si=jWNi7KonoJCUeYOj"
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-            ></iframe>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/sjRh64FrmOQ?si=I6AK3C_2d5UmUfcT"
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-            ></iframe>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/19u386DjB08?si=WfixhdMVXW_dTCj1"
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-            ></iframe>
+          <div className="grid-cols-1 lg:grid-cols-2 gap-8 grid mt-10">
+            <div className="relative w-full h-[158px] lg:w-[560px] lg:h-[315px]">
+              <iframe
+                className="absolute top-0 left-0"
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/AL9scCF6F1E?si=hQugYWjUUJyzT-pV"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            </div>
+            <div className="relative w-full h-[158px] lg:w-[560px] lg:h-[315px]">
+              <iframe
+                className="absolute top-0 left-0"
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/rcT_6CsHiNk?si=jWNi7KonoJCUeYOj"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            </div>
+            <div className="relative w-full h-[158px] lg:w-[560px] lg:h-[315px]">
+              <iframe
+                className="absolute top-0 left-0"
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/sjRh64FrmOQ?si=I6AK3C_2d5UmUfcT"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            </div>
+            <div className="relative w-full h-[158px] lg:w-[560px] lg:h-[315px]">
+              <iframe
+                className="absolute top-0 left-0"
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/19u386DjB08?si=WfixhdMVXW_dTCj1"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            </div>
           </div>
         </div>
       </div>
