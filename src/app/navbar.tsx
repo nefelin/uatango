@@ -8,14 +8,14 @@ const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const path = usePathname();
 
-  const NavLinks = () => (
+  const NavLinks = ({ isMobile }: { isMobile?: boolean }) => (
     <>
       <li>
         <Link
           href="/"
           className={classes(
-            "px-3 py-2 rounded-md",
-            path === "/" ? "font-bold !text-md" : "font-medium text-sm",
+            "px-3 py-2 rounded-md text-sm",
+            path === "/" ? "font-extrabold !text-md" : "font-normal",
           )}
         >
           Home
@@ -25,8 +25,8 @@ const Navbar: React.FC = () => {
         <Link
           href="/schedule"
           className={classes(
-            "px-3 py-2 rounded-md",
-            path === "/schedule" ? "font-bold !text-md" : "font-medium text-sm",
+            "px-3 py-2 rounded-md text-sm",
+            path === "/schedule" ? "font-extrabold !text-md" : "font-normal",
           )}
         >
           Schedule
@@ -36,8 +36,8 @@ const Navbar: React.FC = () => {
         <Link
           href="/staff"
           className={classes(
-            "px-3 py-2 rounded-md",
-            path === "/staff" ? "font-bold !text-md" : "font-medium text-sm",
+            "px-3 py-2 rounded-md text-sm",
+            path === "/staff" ? "font-extrabold !text-md" : "font-normal",
           )}
         >
           Who Are We
@@ -54,7 +54,12 @@ const Navbar: React.FC = () => {
       <li className="lg:mt-0 mt-8">
         <a
           href="https://forms.gle/ep4iVtK6KXevkhdn8"
-          className="px-3 py-2 text-white rounded-md text-sm font-medium hover:bg-amber-400 bg-amber-500"
+          className={classes(
+            "px-3 py-2 text-white rounded-md text-sm font-medium",
+            isMobile
+              ? "bg-amber-500 hover:bg-amber-400"
+              : "bg-blue-800 hover:bg-blue-950",
+          )}
         >
           Take a Class
         </a>
@@ -92,7 +97,7 @@ const Navbar: React.FC = () => {
 
   return (
     <>
-      <nav className="text-blue-950 dark:text-purple-100 p-4 px-8 flex flex-row justify-between items-center w-full bg-blue-50 dark:bg-blue-900">
+      <nav className="text-blue-950 dark:text-white p-4 px-8 flex flex-row justify-between items-center w-full bg-blue-50 dark:bg-amber-500">
         <span className="lg:inline hidden font-bold">
           Argentine Tango at University of Arizona
         </span>
@@ -132,7 +137,7 @@ const Navbar: React.FC = () => {
         >
           <div className="w-full flex justify-end pr-2">{closeButton}</div>
           <ul onClick={() => setIsOpen(false)} className="flex flex-col gap-4">
-            <NavLinks />
+            <NavLinks isMobile />
           </ul>
         </div>
       }
