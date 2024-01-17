@@ -14,8 +14,8 @@ const Navbar: React.FC = () => {
         <Link
           href="/"
           className={classes(
-            "px-3 py-2 rounded-md text-sm",
-            path === "/" ? "font-bold" : "font-medium",
+            "px-3 py-2 rounded-md",
+            path === "/" ? "font-bold !text-md" : "font-medium text-sm",
           )}
         >
           Home
@@ -25,8 +25,8 @@ const Navbar: React.FC = () => {
         <Link
           href="/schedule"
           className={classes(
-            "px-3 py-2 rounded-md text-sm",
-            path === "/schedule" ? "font-bold" : "font-medium",
+            "px-3 py-2 rounded-md",
+            path === "/schedule" ? "font-bold !text-md" : "font-medium text-sm",
           )}
         >
           Schedule
@@ -36,8 +36,8 @@ const Navbar: React.FC = () => {
         <Link
           href="/staff"
           className={classes(
-            "px-3 py-2 rounded-md text-sm",
-            path === "/staff" ? "font-bold" : "font-medium",
+            "px-3 py-2 rounded-md",
+            path === "/staff" ? "font-bold !text-md" : "font-medium text-sm",
           )}
         >
           Who Are We
@@ -99,7 +99,7 @@ const Navbar: React.FC = () => {
         <span className="lg:hidden inline font-bold">U of A Tango</span>
 
         <div className="hidden lg:flex space-x-4">
-          <ul className="flex space-x-4 justify-center">
+          <ul className="flex space-x-4 items-center justify-center">
             <NavLinks />
           </ul>
         </div>
@@ -131,7 +131,7 @@ const Navbar: React.FC = () => {
           )}
         >
           <div className="w-full flex justify-end pr-2">{closeButton}</div>
-          <ul onClick={() => setIsOpen(false)}>
+          <ul onClick={() => setIsOpen(false)} className="flex flex-col gap-4">
             <NavLinks />
           </ul>
         </div>
