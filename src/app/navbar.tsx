@@ -54,6 +54,7 @@ const Navbar: React.FC = () => {
       <li className="lg:mt-0 mt-8">
         <a
           href="https://forms.gle/ep4iVtK6KXevkhdn8"
+          target="_blank"
           className={classes(
             "px-3 py-2 text-white rounded-md text-sm font-medium",
             isMobile

@@ -73,6 +73,7 @@ export default function Home() {
               diversity of this dance. If you want to explore further{" "}
               <a
                 href="https://youtube.com/playlist?list=PLu_9_ehHXqJZSXVN-NLPfzppN3zSptLk-&si=f8YXKAdcNt_q0-wS"
+                target="_blank"
                 className="text-blue-600"
               >
                 here is a playlist

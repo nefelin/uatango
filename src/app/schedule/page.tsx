@@ -9,6 +9,7 @@ const Calendar = () => (
           Ina Gittings Building, 1737 E University Blvd{" "}
           <a
             className="text-blue-600 text-sm"
+            target="_blank"
             href="https://maps.app.goo.gl/CYfYWYZ3rfwJBhB5A"
           >
             (map)
