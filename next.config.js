@@ -4,7 +4,7 @@ const nextConfig = {
         return [
             {
                 source: '/flyer',
-                destination: '/flyer.html',
+                destination: '/flyer.pdf',
             },
         ]
     },
