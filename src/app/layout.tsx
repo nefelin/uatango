@@ -18,11 +18,26 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark">
-      <body className={classes(inter.className, "dark:bg-[#10172A] dark font-serif")}>
+      <body
+        className={classes(
+          inter.className,
+          "dark:bg-[#10172A] dark font-serif",
+        )}
+      >
         <Navbar />
-        <main className="flex min-h-screen flex-col items-center justify-between lg:p-24 p-12">
+        <main className="flex flex-col items-center justify-between lg:p-24 p-12">
           {children}
         </main>
+        <div className="w-full text-center mb-20 text-gray-300 text-sm">
+          Contact us with any questions at{" "}
+          <a
+            href="mailto:info@uatango.com"
+            target="_blank"
+            className="text-blue-600"
+          >
+            info@uatango.com
+          </a>
+        </div>
       </body>
     </html>
   );

@@ -50,7 +50,7 @@ const Calendar = () => (
     </div>
     <div className="relative">
       <iframe
-        className="rounded-sm h-[300px] lg:h-[500px] lg:w-[400px] z-10 relative"
+        className="rounded-sm h-[300px] lg:h-[400px] lg:w-[400px] z-10 relative"
         src="https://calendar.google.com/calendar/embed?height=300&wkst=1&bgcolor=%23ffffff&ctz=America%2FPhoenix&showTitle=0&showTabs=0&showTz=1&showCalendars=0&showPrint=0&showNav=0&mode=AGENDA&src=NjhmMzI5OTY3N2FhZmJiZGI2YTIyODY0MWViMThlZDc2ZmNlZWUzNjQ4NDg1ZThhNzczNzE5ODExN2ViZWM4ZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23F09300"
       ></iframe>
       <div className="absolute top-0 z-0 text-sm text-gray-700 italic dark:text-purple-100">
