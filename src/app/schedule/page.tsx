@@ -42,6 +42,10 @@ const Calendar = () => (
             </ul>
           </li>
         </ul>
+        <div className="mt-4 lg:px-24 text-xs italic text-gray-700 text-center">
+          (financial aid and volunteer oportunities are available for anyone who
+          would like to attend but cannot afford to)
+        </div>
       </div>
     </div>
     <div className="relative">
