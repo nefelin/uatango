@@ -31,11 +31,11 @@ export default function RootLayout({
         <div className="w-full text-center mb-20 text-gray-300 text-sm">
           Contact us with any questions at{" "}
           <a
-            href="mailto:info@uatango.com"
+            href="mailto:eric@uatango.com"
             target="_blank"
             className="text-blue-600"
           >
-            info@uatango.com
+            eric@uatango.com
           </a>
         </div>
       </body>
