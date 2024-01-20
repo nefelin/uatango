@@ -38,7 +38,7 @@ const Calendar = () => (
             6-week series
             <ul className="ml-8">
               <li>Students: $30</li>
-              <li>Faculty: $45</li>
+              <li>Faculty/Staff/Admin: $45</li>
             </ul>
           </li>
         </ul>
