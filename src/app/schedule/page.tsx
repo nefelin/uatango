@@ -13,7 +13,7 @@ const Calendar = () => (
         , and drop-ins are always welcome!
       </h3>
       <p>
-        All classes with take place in the Ina Gittings Building, Room #4.
+        All classes with take place in the Ina Gittings Building, Room #16.
         <br />
         <i className="text-xs">
           Ina Gittings Building, 1737 E University Blvd{" "}
