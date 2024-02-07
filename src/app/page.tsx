@@ -8,12 +8,18 @@ export default function Home() {
         <h1 className="text-4xl">
           Welcome to Argentine Tango at the University of Arizona!
         </h1>
-        <span className="text-xl">
+        <span className="text-xl line-through">
           Now hosting weekly classes! Check our{" "}
           <Link href="/schedule" className="text-blue-600">
             schedule
           </Link>{" "}
           page for details
+        </span>
+        <span className="text-xl max-w-2xl text-center">Classes Temporarily Postponed</span>
+        <span className="text-sm max-w-2xl text-center">
+          Due to a last minute issue with our reserved dance space, classes are
+          postponed until we can secure an alternative location. We appreciate
+          your patience!
         </span>
       </div>
       <div className="lg:w-[90%]">
