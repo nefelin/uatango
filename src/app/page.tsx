@@ -8,24 +8,24 @@ export default function Home() {
         <h1 className="text-4xl">
           Welcome to Argentine Tango at the University of Arizona!
         </h1>
-        <span className="text-xl line-through">
+        <span className="text-xl">
           Now hosting weekly classes! Check our{" "}
           <Link href="/schedule" className="text-blue-600">
             schedule
           </Link>{" "}
           page for details
         </span>
-        <span className="text-xl max-w-2xl text-center">Classes Temporarily Postponed</span>
-        <span className="text-sm max-w-2xl text-center">
-          Due to a last minute issue with our reserved dance space, classes are
-          postponed until we can secure an alternative location. We appreciate
-          your patience!
-        </span>
       </div>
       <div className="lg:w-[90%]">
         <div className="flex lg:flex-row flex-col-reverse justify-between">
           <div className="flex gap-8 flex-col lg:w-1/2">
-            <h2 className="text-2xl">What is Tango?</h2>
+            <h2 className="text-2xl -mb-4">Who are we?</h2>
+            <p>
+              We are a group of local and dancers who are excited to bring
+              Argentine Tango to the University of Arizona.
+            </p>
+
+            <h2 className="text-2xl -mb-4">What is Tango?</h2>
             <p>
               Argentine Tango is a captivating dance that emerged from the
               melting pot of cultures in Argentina during the early 1900s.
@@ -67,7 +67,7 @@ export default function Home() {
         </div>
         <div className="mt-20">
           <div className="flex gap-8 flex-col lg:w-1/2">
-            <h2 className="text-2xl">What does tango look like?</h2>
+            <h2 className="text-2xl -mb-4">What does tango look like?</h2>
             <p>
               Often confused with its cousin, Ballroom Tango, Argentine Tango
               can be difficult to classify. Because of the tremendous breadth of
