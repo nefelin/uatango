@@ -91,6 +91,32 @@ const Staff = () => (
         </p>
       </div>
     </div>
+    <h3 className="lg:mb-12 mb-8 text-3xl w-full flex justify-center">
+      Susan Brewer-Osorio
+    </h3>
+    <div className="flex flex-col items-center lg:flex-row lg:items-start gap-12 lg:mb-28">
+      <Image
+        src="/susan_bio.jpeg"
+        width={400}
+        height={400}
+        alt="A photo of Susan Brewer-Osorio"
+        className="rounded-2xl object-contain lg:h-[400px]"
+      />
+      <div className="gap-8 flex flex-col">
+        <p>
+          Susan is an Assistant Professor at the Center for Latin American
+          Studies, University of Arizona.
+        </p>
+        <p>
+          She was introduced to tango in 2013 through the Latin dance community
+          in Charlottesville, Virginia.
+        </p>
+        <p>
+          Since then, she’s participated in tango communities in Newport News,
+          Virginia, Rochester, New York and Tucson, Arizona.
+        </p>
+      </div>
+    </div>
   </div>
 );
 
