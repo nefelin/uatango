@@ -14,7 +14,7 @@ const Calendar = () => (
       </h3>
       <p>
         All classes take place at the Historic Y<br />
-        738 N 5th Ave, Tucson, AZ 85705{' '}
+        738 N 5th Ave, Tucson, AZ 85705{" "}
         <a
           className="text-blue-600 text-sm"
           target="_blank"
@@ -39,6 +39,8 @@ const Calendar = () => (
           would like to attend but cannot afford to)
         </div>
       </div>
+      Turn left off fifth (heading south) for free parking (unmarked spots only):
+      <img src="/free_parking.png" alt="free parking map" width={300}/>
     </div>
     <div className="relative">
       <iframe
