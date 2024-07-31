@@ -39,7 +39,8 @@ export default function RootLayout({
             eric@uatango.com
           </a>
         </div>
-      </body> */}
+        */}
+      </body>
     </html>
   );
 }
