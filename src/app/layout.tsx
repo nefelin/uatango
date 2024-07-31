@@ -24,7 +24,8 @@ export default function RootLayout({
           "dark:bg-[#10172A] dark font-serif",
         )}
       >
-        <Navbar />
+        <div>Classes are currently on hold</div>
+{/*         <Navbar />
         <main className="flex flex-col items-center justify-between lg:p-24 p-12">
           {children}
         </main>
@@ -38,7 +39,7 @@ export default function RootLayout({
             eric@uatango.com
           </a>
         </div>
-      </body>
+      </body> */}
     </html>
   );
 }
